@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrella Interactive</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<html>
+<body class="h-screen overflow-x-hidden bg-teal-950">
+    <header>
+        <nav class="flex items-center justify-between px-5 lg:px-5 h-20 relative shadow-sm">
+            <!-- Brand Name -->
+            <a href="index.html" class="flex items-center" aria-label="Estrella Interactive Home">
+                <h1 class="lg:text-xltext-sm font-semibold text-white/50">
+                    Estrella-Interactive
+                </h1>
+            </a>
+        
+            <!-- Navigation Menu -->
+            <div id="nav-menu" class="fixed inset-0 bg-white translate-x-full lg:translate-x-0 lg:relative lg:bg-transparent transition-transform duration-300 ease-in-out z-50">
+                <div class="flex flex-col lg:flex-row items-center justify-center h-full lg:h-auto">
+                    <button id="close-menu" class="lg:hidden absolute top-4 right-4 text-2xl" aria-label="Close Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>                      
+                    </button>
+    
+                    <ul class="flex flex-col text-sm font-body lg:font-normal lg:text-white lg:flex-row items-center gap-6 lg:gap-12 text-center">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <!-- <li><a href="services.html" class="nav-link">Our Services</a></li> -->
+                        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                        <!-- <li><a href="pricing.html" class="nav-link">Pricing</a></li> -->
+                    </ul>
+    
+                    <div class="mt-8 lg:mt-0 lg:ml-8">
+                        <a href="contact2.html" class="inline-block">
+                            <button class="py-4 text-sm font-body font-normal px-6 animate-pulse bg-gradient-to-r from-black to-teal-950 rounded-md text-slate-400 hover:text-slate-300 transition">
+                                Have a Project? Let's Talk
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Mobile Menu Toggle Button -->
+            <button id="toggle-menu" class="lg:hidden" aria-label="Toggle Navigation Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="orange" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+
+    </header>
+
+<main class=" relative top-8">
+    <div class="grid grid-flow-row gap-6 justify-center  mt-40 relative mx-5">
+        <h6 class="font-bold font-subbody text-yellow-500 text-sm">
+            About us
+        </h6>
+        <h1 class="font-black font-subbody text-3xl lg:text-center lg:text-4xl text-slate-100">
+            We Set Out to Build Unique Experiences
+        </h1>
+    </div>
+
+    <!--Our story-->
+    <div class="relative mt-60 grid grid-flow-row lg:grid-flow-col items-center mx-12 gap-6 py-6">
+
+        <div class="lg:hidden">
+            <img src="images/story.jpg">
+        </div>
+
+        <div class="grid grid-flow-row gap-4">
+            <h3 class="lg:text-2xl tracking-widest animate-pulse font-bold font-subbody text-slate-100">
+                <span class="text-yellow-600">O</span>ur Story
+            </h3>
+
+            <h4 class="font-light leading-6 text-sm lg:text-lg font-body text-slate-100">
+                Founded on a passion for technology and a commitment to excellence,
+                Estrella Interactive has grown from a small team of visionaries to a
+                full-service tech agency that partners with businesses around the globe.
+                We believe in creating technology that empowers users and brings value to
+                    organizations, helping them stay ahead in a rapidly evolving digital landscape.
+            </h4>
+        </div>
+
+        <div class="hidden lg:block">
+        <img src="images/story.jpg">
+        </div>
+
+    </div>
+    
+
+    <!--Our team-->
+    <div class="relative mt-12 grid grid-flow-row mx-12 gap-6 py-6 lg:grid-flow-col items-center">
+
+        <img src="images/team.jpg">
+
+        <div class="grid grid-flow-row gap-4">
+        <h3 class="lg:text-2xl tracking-widest animate-pulse font-bold font-subbody text-slate-100">
+            <span class="text-green-600">O</span>ur Team
+        </h3>
+        <h4 class="font-light leading-6 lg:text-lg text-sm font-body text-slate-100">
+            Our team consists of skilled professionals across various domains, from
+             UI/UX designers and developers to network engineers and cybersecurity
+              specialists. Together, we bring a depth of expertise that allows us to
+               deliver top-tier solutions to our clients.
+        </h4>
+        </div>
+    </div>
+    
+    <!-- <div class="relative top-28 grid grid-flow-row rounded-md py-4 gap-6 shadow-2xl bg-gradient-to-r from-slate-950 to-teal-700">
+        <h3 class="font-black text-2xl flex text-white justify-center">
+            <span class="text-blue-700">O</span>ur Process
+        </h3>
+
+        <div class="relative grid grid-flow-row gap-4">
+            <div>
+                <h2 class="font-black text-white text-lg flex justify-center">
+                    Discovery
+                </h2>
+                <h4 class=" text-center text-sm px-12 text-slate-300">
+                    We listen, research, and collaborate to<br> understand your unique needs
+                </h4>
+            </div>
+
+                <div>
+                    <h2 class="font-black text-white text-lg flex justify-center">
+                        Strategy & Planning
+                    </h2>
+
+                    <h4 class=" text-center text-sm px-12 text-slate-300">
+                        A comprehensive roadmap for achieving your<br> business objectives.
+                    </h4>
+                </div>
+
+                <div>
+                    <h2 class="font-black text-white text-lg flex justify-center">
+                        Design & Development
+                    </h2>
+
+                    <h4 class=" text-center text-sm px-12 text-slate-300">
+                        Rigorous design and development to bring<br> your vision to life.
+
+                    </h4>
+                </div>
+
+                <div>
+                    <h2 class="font-black text-white text-lg flex justify-center">
+                        Design & Development
+                    </h2>
+
+                    <h4 class=" text-center text-sm px-12 text-slate-300">
+                        Ensuring high standards in functionality, security,<br> and performance.
+                    </h4>
+                </div>
+
+                <div>
+                    <h2 class="font-black text-white text-lg flex justify-center">
+                        Launch & Support
+                    </h2>
+
+                    <h4 class=" text-center text-sm px-12 text-slate-300">
+                        Launching with full support and<br> continuous optimization.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    
+<!--Call to action-->
+<div class="px-5 grid grid-flow-row gap-4 justify-centre relative top-40 border border-dotted border-opacity-70 border-teal-950 rounded-lg">
+    <h4 class="font-black text-slate-100 text-xl text-center">
+        Like us to handle your project?
+    </h4>
+
+    <div class="grid justify-center">
+        <a href="contact.html"><button class="py-3 hover:animate-pulse px-8 bg-white rounded-md text-lg  text-black hover:text-slate-300 font-semibold">Get in Touch</button></a>
+    </div> 
+</div>
+
+</main>
+
+<!--footer inside main-->
+<div class="relative top-64  py-3 flex justify-center">
+    <div >
+        <h6 class="text-xs font-light flex items-center text-center">
+            Copyright @ Estrella Interactive Studios. All rights reserved. 2024
+        </h6>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+            const navMenu = document.getElementById('nav-menu');
+            const toggleMenuBtn = document.getElementById('toggle-menu');
+            const closeMenuBtn = document.getElementById('close-menu');
+
+            // Toggle mobile menu
+            toggleMenuBtn.addEventListener('click', () => {
+                navMenu.classList.remove('translate-x-full');
+                navMenu.classList.add('translate-x-0');
+            });
+
+            // Close mobile menu
+            closeMenuBtn.addEventListener('click', () => {
+                navMenu.classList.remove('translate-x-0');
+                navMenu.classList.add('translate-x-full');
+            });
+
+            // Close menu when a link is clicked (mobile)
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!window.matchMedia('(min-width: 1024px)').matches) {
+                        navMenu.classList.remove('translate-x-0');
+                        navMenu.classList.add('translate-x-full');
+                    }
+                });
+            });
+        });
+</script>
+</body>
+</html>
